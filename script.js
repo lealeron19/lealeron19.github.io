@@ -1,5 +1,5 @@
 // ===== SETTINGS: change this to your GitHub username =====
-const GITHUB_USERNAME = "yourusername";
+const GITHUB_USERNAME = "lealeron19";
 
 // ===== 1. PROJECTS FROM JSON =====
 async function loadProjects() {
