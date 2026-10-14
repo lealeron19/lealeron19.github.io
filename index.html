@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Your Name, IT student.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="brand">YN</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark theme">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section hero">
+      <div class="hero-text">
+        <h1>Lea B. Leron</h1>
+        <p class="tagline" id="tagline" data-text="Aspiring web developer who turns ideas into working websites.">Aspiring web developer who turns ideas into working websites.</p>
+        <p class="intro">I am a second-year IT student who enjoys building clean, useful web pages</p>
+        <div class="cta-group">
+          <a href="#projects" class="btn btn-primary">View my projects</a>
+          <a href="#contact" class="btn btn-outline">Contact me</a>
+        </div>
+      </div>
+      <img src="images/profile.jpg" alt="Lea B. Leron" class="profile-photo" width="260" height="260" onerror="this.style.display='none'">
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about-grid">
+        <article class="card">
+          <h3>Biography</h3>
+          <p>Write 3 to 4 sentences about who you are, where you are from (city or country only), and what got you into technology.</p>
+        </article>
+        <article class="card">
+          <h3>Education</h3>
+          <p>Your School Name<br>BS Information Technology<br>Expected graduation: 2028</p>
+        </article>
+        <article class="card">
+          <h3>Career goals</h3>
+          <p>Become a full-stack developer who builds software that helps people in everyday life.</p>
+        </article>
+        <article class="card">
+          <h3>Interests</h3>
+          <p>Web design, Programming and learning new programming languages.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <article class="card">
+          <h3>Programming languages</h3>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Tools and technologies</h3>
+          <ul class="tag-list">
+            <li>Git</li><li>GitHub</li><li>VS Code</li><li>REST APIs</li><li>JSON</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Soft skills</h3>
+          <ul class="tag-list">
+            <li>Teamwork</li><li>Communication</li><li>Time management</li><li>Problem solving</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div id="project-grid" class="project-grid" aria-live="polite">
+        <p class="status-message">Loading projects…</p>
+      </div>
+
+      <h3 class="subheading">Latest GitHub repositories</h3>
+      <ul id="repo-list" class="repo-list" aria-live="polite">
+        <li class="status-message">Loading repositories…</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact-layout">
+        <div class="contact-info card">
+          <h3>Let's connect</h3>
+          <ul class="contact-links">
+            <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+            <li>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a></li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form card" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name">
+            <span class="error" id="name-error"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <span class="error" id="email-error"></span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <span class="error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p id="form-success" class="form-success" role="status" hidden>Thank you! Your message has been received.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Lea B. Leron. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
