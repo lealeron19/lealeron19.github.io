@@ -6,7 +6,7 @@ async function loadProjects() {
   const grid = document.getElementById("project-grid");
 
   try {
-    const response = await fetch("data/projects.json");
+    const response = await fetch("projects.json");
     if (!response.ok) throw new Error("HTTP " + response.status);
     const projects = await response.json();
 
@@ -27,7 +27,7 @@ function createProjectCard(project) {
   card.className = "card project-card";
 
   const img = document.createElement("img");
-  img.src = "images/" + project.screenshot;
+  img.src = "profile/" + project.screenshot;
   img.alt = "Screenshot of " + project.title;
   img.loading = "lazy";
   img.onerror = () => img.remove(); // hide if the screenshot file is missing
