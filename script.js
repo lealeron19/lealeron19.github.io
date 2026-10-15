@@ -196,7 +196,7 @@ async function loadRepos() {
       a.textContent = r.name;
       var lang = document.createElement("span");
       lang.textContent = r.language || "";
-      li;append(a, lang);
+      li.append(a, lang);
       list.appendChild(li);
     });
     } catch (error) {
