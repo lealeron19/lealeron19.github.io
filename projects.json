@@ -1,29 +1,10 @@
 [
   {
-    "title": "Grade Calculator",
-    "description": "A web app that computes a student's weighted average from quizzes, exams and projects.",
-    "technologies": ["HTML", "CSS", "JavaScript"],
-    "role": "Sole developer: designed the interface and wrote all the code.",
-    "screenshot": "grade-calculator.png",
-    "link": "https://github.com/yourusername/grade-calculator",
-    "linkLabel": "View on GitHub"
-  },
-  {
-    "title": "Class Schedule Planner",
-    "description": "A weekly timetable that lets students add, edit and remove subjects.",
-    "technologies": ["HTML", "CSS", "JavaScript", "JSON"],
-    "role": "Team leader in a group of 3: planned tasks and built the schedule logic.",
-    "screenshot": "schedule-planner.png",
-    "link": "https://github.com/yourusername/schedule-planner",
-    "linkLabel": "View on GitHub"
-  },
-  {
-    "title": "Student Info Database",
-    "description": "A small Python program that stores and searches student records in a file.",
-    "technologies": ["Python", "Git"],
-    "role": "Developer: wrote the search feature and tested the program.",
-    "screenshot": "student-database.png",
-    "link": "https://github.com/yourusername/student-database",
-    "linkLabel": "View on GitHub"
+    "title": "Login Page",
+    "description": "A log-in page example",
+    "screenshot": "login.jpg",
+    "technologies": ["HTML", "CSS"],
+    "role":"Designer and Developer",
+    "link":"https://lealeron19.github.io/"
   }
 ]
