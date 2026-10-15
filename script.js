@@ -172,10 +172,10 @@ loadProjects();
 
 /* ===== Back to top ===== */
 (function(){
-  var b = document.getElementByld("back to top");
+  var b = document.getElementById("back to top");
   if (!b) return;
   window.addEventListener("scroll", function () { b.hidden = window,scrollY < 400;});
-  b.addEventLister("click", function () { window.scrollTo({ top: 0, behaviour: "smooth"});});
+  b.addEventListener("click", function () { window.scrollTo({ top: 0, behaviour: "smooth"});});
 })();
 
 /* ===== Latest GitHub repositories ===== */
