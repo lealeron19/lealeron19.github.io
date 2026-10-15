@@ -180,7 +180,7 @@ loadProjects();
 
 /* ===== Latest GitHub repositories ===== */
 async function loadRepos() {
-  var list = document.getElementByld("repo-list");
+  var list = document.getElementById("repo-list");
   if (!list) return;
   try {
     var res = await fetch("https://api.github.com/users/lealeron19/repos?sort=updated&per_page=4");
