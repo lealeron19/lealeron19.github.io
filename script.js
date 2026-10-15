@@ -196,8 +196,8 @@ async function loadRepos() {
       a.textContent = r.name;
       var lang = document.createElement("span");
       lang.textContent = r.language || "";
-      li.append(a, lang);
-      list.appendChild(li);
+      li.append(a);
+      list.appendChild(lang);
     });
     } catch (error) {
       console.warn("GitHub data unavailable;", error);
