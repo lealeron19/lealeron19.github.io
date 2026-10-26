@@ -205,3 +205,36 @@ async function loadRepos() {
   }
 }
 loadRepos();
+/* ===== Latest GitHub repositories ===== */
+async function loadRepos() {
+  var list = document.getElementById("repo-list");
+  if (!list) return;
+  try {
+    var res = await fetch("https://api.github.com/users/lealeron19/repos?sort=updated&per_page=5");
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    var repos = await res.json();
+    list.innerHTML = "";
+    if (repos.length === 0) {
+      list.innerHTML = "<li>No public repositories yet.</li>";
+      return;
+    }
+    repos.forEach(function (r) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = r.html_url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.textContent = r.name;
+      li.appendChild(a);
+      if (r.language) {
+        var span = document.createElement("span");
+        span.textContent = " (" + r.language + ")";
+        li.appendChild(span);
+      }
+      list.appendChild(li);
+    });
+  } catch (error) {
+    list.innerHTML = "<li>Repositories could not be loaded.</li>";
+  }
+}
+loadRepos();
