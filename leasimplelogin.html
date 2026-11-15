@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* SKY BLUE BACKGROUND */
+    body {
+      background: linear-gradient(135deg, #87ceeb, #00bfff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333333;
+    }
+
+    /* CARD / LOGIN BOX DESIGN */
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 35px 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 320px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+      background-color: #e0f2fe;
+      color: #0284c7;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 15px auto;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #475569;
+      text-align: left; /* Nakatutok sa kaliwang gilid */
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #cbd5e1;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .input-group input:focus {
+      border-color: #0284c7;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: #475569;
+    }
+
+    .options label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0284c7;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background-color: #0369a1;
+    }
+
+    .footer-text {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #475569;
+    }
+
+    .footer-text a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="avatar">👤</div>
+    <h2>Login</h2>
+
+    <form>
+      <div class="input-group">
+        <label>USERNAME</label>
+        <input type="text" placeholder="Enter username">
+      </div>
+
+      <div class="input-group">
+        <label>PASSWORD</label>
+        <input type="password" placeholder="Enter password">
+      </div>
+
+      <div class="options">
+        <label>
+          <input type="checkbox"> Remember
+        </label>
+        <a href="#" style="color: #0284c7; text-decoration: none; font-weight: bold;">Forgot?</a>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="footer-text">
+      Don't have an account? <a href="#">Register</a>
+    </div>
+  </div>
+
+</body>
+</html>
+    
