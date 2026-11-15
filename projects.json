@@ -6,5 +6,13 @@
     "technologies": ["HTML", "CSS"],
     "role":"Designer and Developer",
     "link":"https://lealeron19.github.io/"
+  },
+  {
+    "title": "Moto Log",
+    "description": "A maintenance log for motorcycle owners to record oil changes and repairs with costs, with next oil change reminders. Installable on phones.",
+    "screenshot": "moto-log.jpg",
+    "technologies": ["React", "Vite", "PWA"],
+    "role":"Designer and Developer",
+    "link":"https://my-moto-log.netlify.app"
   }
 ]
