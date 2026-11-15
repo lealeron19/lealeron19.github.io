@@ -76,3 +76,4 @@ input,textarea{width:100%;padding:.7rem;font:inherit;color:var(--text);backgroun
 .repo-list li{display:flex;justify-content:space-between;align-items:center;gap:1rem;background:var(--border);border-left:6px solid var(--accent);border-radius:var(--r);padding:1rem 1.25}
 .repo-list a{color:var(--text);font-weight:600}
 .repo-list span{color:var(--muted)}
+.project-card img{object-position:top}
