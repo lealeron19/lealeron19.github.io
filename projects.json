@@ -9,10 +9,10 @@
   },
   {
     "title": "Moto Log",
-    "description": "A maintenance log for motorcycle owners to record oil changes and repairs with costs, with next oil change reminders. Installable on phones.",
+    "description": "A mobile app for motorcycle owners to record oil changes and repairs with costs, with next oil change reminders. Installable on phones. Live app: my-moto-log.netlify.app",
     "screenshot": "moto-log.jpg",
     "technologies": ["React", "Vite", "PWA"],
     "role":"Designer and Developer",
-    "link":"https://my-moto-log.netlify.app"
+    "link":"https://github.com/lealeron19/moto-log"
   }
 ]
